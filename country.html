@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country.css" />
+  </head>
+
+  <body class="l1">
+    <header>
+      <div class="light-header1">
+        <p class="light-title">Where in the world?</p>
+        <div class="light">
+          <svg
+            class="moon-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-moon"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg
+            class="sun-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-sun"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- <p>Dark Mode</p> -->
+        </div>
+      </div>
+    </header>
+
+    <div class="backbtn">
+      <svg
+        class="backicon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-arrow-left"
+      >
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      <a>back</a>
+    </div>
+
+    <div class="light-back">
+      <a href=""></a>
+    </div>
+
+    <div class="main-container">
+      <img src="https://flagcdn.com/wf.svg" alt="" />
+      <div class="light-details">
+        <h1 class="headertitle">country</h1>
+        <div class="full-details">
+          <div class="details1">
+            <p><b>Native Name: </b><span class="native-name"></span></p>
+            <p><b>Population: </b><span class="population"></span></p>
+            <p><b>Region: </b><span class="region"></span></p>
+            <p><b>Sub Region: </b> <span class="sub-region"></span></p>
+            <p><b>Capital: </b><span class="capital"></span></p>
+          </div>
+          <div class="details2">
+            <p><b>Top Level Domain: </b><span class="topleveldomain"></span></p>
+            <p><b>Currency: </b><span class="currency"></span></p>
+            <p><b>Language: </b><span class="language"></span></p>
+          </div>
+        </div>
+        <div class="light-border-country">
+          <p>Border Country:</p>
+          <div class="border-country-data">
+            <!-- <a href="">sdg fsd</a>
+                    <a href="">sdfsd fsd</a>
+                    <a href="">fsad</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="country.js" type="module"></script>
+  </body>
+</html>

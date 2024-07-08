@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Nunito Sans;
+}
+body{
+    overflow-x: hidden;
+}
+.l1 {
+    --background-color: hsl(0, 0%, 98%);
+    --font-color: hsl(0, 0%, 0%);
+    --element-color: hsl(0, 0%, 100%);
+    --boxshedow: 0px 2px 9px 0px hsl(0, 0%, 75%);
+    font-family: Nunito Sans;
+    background-color:var(--background-color) ;
+}
+d1 {
+    --background-color: hsl(207, 26%, 17%);
+    --font-color: hsl(0, 0%, 100%);
+    --element-color: hsl(209, 23%, 22%);
+    --boxshedow: 0px 2px 9px 0px hsl(208, 29%, 9%);
+    background-color:var(--background-color) ;
+   
+}
+
+.light-header1 {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--element-color);
+    
+    box-shadow: 0px -12px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.light-title {
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--font-color);
+}
+
+.light {
+    display: flex;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.moon-icon {
+    transform: scale(1);
+    position: relative;
+    right: 18px;
+    /* display: none; */
+}
+.sun-icon{
+    transform: scale(1);
+    position: relative;
+    right: 18px;
+    display: none;
+}
+
+.light p {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.light-header2 {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 50px;
+}
+
+.light-search-bar {
+    width: 400px;
+    height: 50px;
+    background-color: var(--element-color);
+    border-radius: 2px;
+    box-shadow: var(--boxshedow);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+
+    margin-left: 10px;
+}
+
+.light-search-icon {
+    transform: scale(.7);
+
+
+}
+
+.light-Search-input {
+    width: 85%;
+    height: 80%;
+color: var(--font-color);
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.light-Search-input::placeholder{
+    color: var(--font-color);
+}
+.light-dropdown-main {
+    width: 170px;
+    height: 50px;
+    background-color: var(--element-color);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 2px;
+    box-shadow: var(--boxshedow);
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+.light-dropdown-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--font-color);
+    
+}
+
+.light-dropdown-list {
+    width: 170px;
+    background-color: var(--element-color);
+    box-shadow: var(--boxshedow);
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px 0 10px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--font-color);
+
+    visibility: hidden;
+}
+.vs{
+    visibility: visible;
+}
+.light-dropdown-list li {
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+main {
+    width: 90vw;
+    margin-inline: auto;
+}
+
+.light-all-country {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+}
+
+.light-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 6px;
+    text-decoration: none;
+
+    background-color: var(--element-color);
+    box-shadow: var(--boxshedow);
+    color: var(--font-color);
+}
+
+.flag img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.light-country-details {
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+}
+
+.light-country-details h1 {
+    font-size: 18px;
+    font-weight: 900;
+    color: inherit;
+    margin-bottom: 12px;
+}
+
+.light-country-details p {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 440px) {
+    body {
+        background-color: brown;
+    }
+
+    .light-header1 {
+        padding: 0 25px;
+    }
+
+    .light-title {
+        font-size: 14px;
+
+    }
+
+    .light p {
+        font-size: 12px;
+        padding-top: 3px;
+        padding-left: 0px;
+    }
+
+    .moon-icon {
+        transform: scale(.6);
+    }
+
+    .light-header2 {
+        width: 85vw;
+        padding-left: 0;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 25px;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .light-search-bar {
+        width: 100%;
+        height: 40px;
+        margin-left: 0;
+    }
+
+    .light-dropdown {
+        width: 60vw;
+        margin-top: 30px;
+        align-self: flex-start;
+    }
+
+    .light-dropdown-main {
+        height: 40px;
+    }
+
+
+
+}
+
+

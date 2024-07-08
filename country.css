@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Nunito Sans;
+    overflow-x: hidden;
+}
+
+.backbtn{
+    cursor: pointer;
+    width: 100px;
+border-radius: 4px;
+    position: relative;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    top: 50px;
+    left: 100px;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    box-shadow: var(--boxshedow);
+}
+.backicon{
+    color: var(--font-color);
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    bottom: 0;
+    transform: scale(.7);
+    
+}
+
+.main-container {
+    color: var(--font-color);
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-inline: auto;
+margin-top: 100px;
+}
+
+.main-container img {
+    width: 450px;
+    max-width: 50%;
+}
+
+.light-details {
+    width: 450px;
+}
+
+.full-details {
+    display: flex;
+    gap: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.light-border-country p {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.border-country-data a {
+    border: 2px solid var(--font-color);
+    box-shadow: var(--boxshedow);
+    border-radius: 12px;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+@media(max-width:1050px) {
+.main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-inline: auto;
+margin-top: 100px;
+}
+
+.main-container img {
+    width: 450px;
+max-width: 100%;
+}
+
+.light-details {
+    width: 450px;
+    max-width: 100%;
+}
+}
+
+@media(max-width:440px){
+    .main-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .main-container img {
+        max-width: 100%;
+    }
+    
+    .light-details {
+        width: 450px;
+    }
+    
+    .full-details {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    
+
+    
+
+}
