@@ -220,7 +220,9 @@ function displaycard(data) {
     linkcard.classList.add("light-card");
     const NOCAPITAL = "---";
     const lightcard = `
-            <div class="flag"><img src="${country.flags.svg}" alt=""></div>
+            <div class="flag"><img src="${country.flags.svg}" alt="${
+      country.name.common
+    }"></div>
             <div class="light-country-details">
                 <h1>${country.name.common}</h1>
                 <p><b>Population:</b>${country.population}</p>
